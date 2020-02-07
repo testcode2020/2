@@ -1,7 +1,14 @@
-print(2)
-print('hello')
-print('hello')
+from math import radians
+import numpy as np     # installed with matplotlib
+import matplotlib.pyplot as plt
 
-print(3)
+def main():
+    a = 'ABC'
+    b = a
+    a = 'XYZ'
+    print(b)
+    x = np.arange(0, radians(1800), radians(12))
+    plt.plot(x, np.cos(x), 'b')
+    plt.show()
 
-1+1+2+4+7
+main()
